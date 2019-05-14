@@ -1,6 +1,16 @@
 package com.boot.model;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+//this is being used as a DTO object
+@Entity
 public class Shipwreck {
+	//eight attributes that define our shipwreck
+	@Id
+	@GeneratedValue (strategy = GenerationType.AUTO)
 	Long id;
 	String name;
 	String description;
